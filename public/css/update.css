@@ -1,0 +1,71 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    color: rgb(223, 177, 92);
+    background-color: rgb(2, 66, 80);
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+}
+.body{
+    height: 450px;
+    background-color:  rgb(230, 227, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.form{
+    height: 350px;
+    width: 650px;
+    background-color: rgb(64, 143, 159);
+    opacity: 70%;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.form{
+    height: 350px;
+    width: 650px;
+    background-color: rgb(105, 171, 184);
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.form h2{
+    display: flex;
+    justify-content: center;
+}
+.identitas form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    color:white;
+    
+}
+.mules{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    color:white;
+}
+.mules input{
+    height: 25px;
+    border-style: none;
+    border-radius: 0.8rem;
+}
+.button{
+    height: 40px;
+    margin: 1rem 15rem 1rem 15rem;
+    border-style: none;
+    border-radius: 2rem;
+    background: rgb(229, 188, 111);
+    color: rgb(150, 40, 139);
+    font-size: 15px;
+    font-weight: 700;
+}
