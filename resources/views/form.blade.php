@@ -33,7 +33,7 @@
                         <input type="text" name="alamat" id="">
                   
                         <label for="tlp">Phone Number</label>
-                        <input type="number" name="tlp" id="">
+                        <input type="tel" name="tlp" id="">
                     </div>
                     <input class= "button" type="submit" value="Submit">
                 </form>
