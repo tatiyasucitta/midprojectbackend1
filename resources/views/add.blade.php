@@ -19,21 +19,22 @@
         <div class="form">
             <h2>Employee's Data</h2>
             <div class="identitas">
-                <form action="http://127.0.0.1:8000/add2" method="POST">
+                <form action="/" method="POST">
+                    @csrf
                     <div class="mules">
-                        <label for="nama">Name</label>
-                        <input type="text" name="nama" id="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="">
                   
                     
-                        <label for="umur">Age</label>
-                        <input type="number" name="umur" id="">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="">
                    
                   
-                        <label for="alamat">Address</label>
-                        <input type="text" name="alamat" id="">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="">
                   
-                        <label for="tlp">Phone Number</label>
-                        <input type="tel" name="tlp" id="">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="">
                     </div>
                     <input class= "button" type="submit" value="Submit">
                 </form>

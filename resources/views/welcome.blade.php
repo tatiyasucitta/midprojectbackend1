@@ -21,7 +21,7 @@
         <div class="option">
         <h2>Select Menu:</h2>
         <ul class="afaantuh">
-            <li><h3><a href="">View Employees</a></h3></li>
+            <li><h3><a href="{{ route('view')}}">View Employees</a></h3></li>
             <li><h3><a href="{{ route('add')}}">Add Employee</a></h3></li>
             <li><h3><a href="{{ route('up')}}">Update Employee's Data</a></h3></li>
             <li><h3><a href="">Delete</a></h3></li>

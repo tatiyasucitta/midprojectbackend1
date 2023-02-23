@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\EmployeeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/add', function () {
-    return view('form');
-})->name('add');
+// Route::get('/add', function () {
+//     return view('form');
+// })->name('add');
 Route::get('/update', function () {
     return view('update');
 })->name('up');
+Route::get('/view', [EmployeeController::class,'view'])->name('view');
+Route::get('/add', [EmployeeController::class,'addviewpage'])->name('add');
+Route::post('/', [EmployeeController::class,'add'])->name('add1');
