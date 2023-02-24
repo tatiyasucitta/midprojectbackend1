@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 class EmployeeController extends Controller
 {
     public function view(){
-
-        return view('view');
+       
+        // dd($employees); 
+        return view('view',['employees' => employee::all()]);
     }
     public function addviewpage(){
         return view('add');
@@ -21,6 +22,6 @@ class EmployeeController extends Controller
             'address' =>$request ->address,
             'phone' =>$request ->phone
         ]);
-        return view('welcome');
+        return view('add');
     }
 }

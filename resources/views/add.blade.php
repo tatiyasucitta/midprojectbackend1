@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="{{ asset('css/form.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/add.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <h1>Add Employee</h1>
+        <div class="title">
+            <h1>Add Employee</h1>
+        </div>     
     </div>
+    <div class="shortcut">
+        <a href="{{ route('welcome')}}">Home</a>
+        <a href="{{ route('view')}}">View Employees</a>
+        <a href="{{ route('up')}}">Update Employee's Data</a>
+        <a href="">Delete</a>
+    </div>   
     <div class="body">
+        
         <div class="form">
             <h2>Employee's Data</h2>
             <div class="identitas">
-                <form action="/" method="POST">
+                <form action="/added" method="POST">
                     @csrf
                     <div class="mules">
                         <label for="name">Name</label>
