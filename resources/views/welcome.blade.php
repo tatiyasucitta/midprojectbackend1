@@ -51,7 +51,13 @@
                                 <td class="employee-address">{{ $employee->address }}</td>
                                 <td class="employee-phone">{{ $employee->phone }}</td>
                                 <td class="update"><a href="{{ url('update/'. $employee->id) }}" class = "upbutton">Update</a></td>
-                                <td class="delete"><a href="" class = "delbutton">Delete</a></td>
+                                <td class="delete">
+                                    <form action="{{  url('delete/'. $employee->id)  }}" method="post">
+                                        @csrf
+                                        @method('delete')
+                                    <button type="submit">Delete</button>  
+                                    </form>
+                                </td>
                             </tr>
                             @php $num++ @endphp
                         @endforeach

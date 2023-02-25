@@ -21,5 +21,7 @@ Route::get('/add', [EmployeeController::class,'addviewpage'])->name('add');
 Route::post('/added', [EmployeeController::class,'add'])->name('added');
 
 
-Route::get('/update/{id}', [EmployeeController::class,'update']);
-Route::patch('/updated', [EmployeeController::class,'updated'])->name('updated');
+Route::get('/update/{id}', [EmployeeController::class,'update'])->name('update');
+Route::patch('/updated.employee/{id}', [EmployeeController::class,'updated'])->name('updated.employee');
+
+Route::delete('/delete/{id}', [EmployeeController::class,'delete'])->name('delete.employee');

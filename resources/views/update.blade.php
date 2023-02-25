@@ -23,23 +23,25 @@
     </div>
     <div class="body">
         <div class="form">
-            <h2>Update Data</h2>
+            <h2>Edit Data</h2>
             <div class="identitas">
-                <form action="http://127.0.0.1:8000/add2" method="POST">
+            <form action="{{ url('updated.employee/'. $employee->id) }}" method="post">
+                    @csrf
+                    @method('patch')
                     <div class="mules">
                         <label for="nama">Name</label>
-                        <input type="text" name="nama" id="">
+                        <input type="text" name="nama" id="" value="{{ $employee ->name }}">
                   
                     
                         <label for="umur">Age</label>
-                        <input type="number" name="umur" id="">
+                        <input type="number" name="umur" id="" value="{{ $employee ->age }}">
                    
                   
                         <label for="alamat">Address</label>
-                        <input type="text" name="alamat" id="">
+                        <input type="text" name="alamat" id="" value="{{ $employee ->address }}">
                   
                         <label for="tlp">Phone Number</label>
-                        <input type="tel" name="tlp" id="">
+                        <input type="tel" name="tlp" id="" value="{{ $employee ->phone }}">
                     </div>
                     <input class= "button" type="submit" value="Submit">
                 </form>
