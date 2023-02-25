@@ -22,6 +22,11 @@
     background-color: rgb(2, 66, 80);
 }
 
+.shortcut a{
+    color:aliceblue;
+    font-size: 10px;
+}
+
 .title{
     display: flex;
     justify-content: start;
@@ -46,14 +51,19 @@
     color: white;
 
 }
+
 .employee-table{
     margin: 2rem 0rem;
     border-style: ridge;
     width: 80%;
 }
-.shortcut a{
+
+.delete_btn{
+    border-style: none;
+    border-radius: 15px;
+    background-color: rgb(2, 66, 80);
     color:aliceblue;
-    font-size: 10px;
+    width: 80px;
 }
 .content{
     padding:0.5rem;

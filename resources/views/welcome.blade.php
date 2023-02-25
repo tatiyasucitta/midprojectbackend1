@@ -55,7 +55,7 @@
                                     <form action="{{  url('delete/'. $employee->id)  }}" method="post">
                                         @csrf
                                         @method('delete')
-                                    <button type="submit">Delete</button>  
+                                    <button class="delete_btn" type="submit">Delete</button>  
                                     </form>
                                 </td>
                             </tr>
