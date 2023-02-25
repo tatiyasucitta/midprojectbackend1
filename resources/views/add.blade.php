@@ -14,10 +14,7 @@
 <body>
     <div class="header">
         <div class="shortcut">
-            <a href="{{ route('welcome') }}">Home</a>
-            <a href="{{ route('view') }}">View Employee</a>
-            <a href="{{ route('up') }}">Update Employee's Data</a>
-            <a href="">Delete</a>
+            <a href="/">View Employee</a>
         </div>
         <div class="title">
             <h1>Add Employee</h1>
