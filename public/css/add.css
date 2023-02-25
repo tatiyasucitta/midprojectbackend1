@@ -4,14 +4,42 @@
 
 .header{
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    flex-direction: column;
+    justify-content: flex-start;
     color: rgb(223, 177, 92);
     background-color: rgb(2, 66, 80);
     border-radius: 15px 15px 0px 0px;
-    font-weight: bold;
+    align-items: center;
+    padding: 1rem;
 }
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:1rem;
+    background-color: rgb(2, 66, 80);
+}
+
+.shortcut a{
+    color:aliceblue;
+    font-size: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15%;
+    flex-grow: 1;
+}
+
+.title h1{
+    font-size: 35px;
+    margin-block-start: 0.1rem;
+    margin-block-end: 0.2rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
 .body{
     height: 450px;
     background-color:  rgb(230, 227, 218);
@@ -63,28 +91,4 @@
     color: rgb(150, 40, 139);
     font-size: 15px;
     font-weight: 700;
-}
-.shortcut {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 0rem 0rem 1rem 1rem;
-    gap:1rem;
-    background-color: rgb(2, 66, 80);
-}
-.shortcut a{
-    color:aliceblue;
-    font-size: 12px;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title h1{
-    font-size: 35px;
-    margin-block-start: 0.1rem;
-    margin-block-end: 0.2rem;
-    padding: 0.5rem 0rem 0rem 0rem;
 }

@@ -15,11 +15,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-family: 'Poppins', sans-serif; */
     height: 450px;
     background-color: rgb(230, 227, 218);
     border-style: none;
-    padding-left: 1.5rem;
 }
 .option{
     display: flex;

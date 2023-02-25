@@ -13,18 +13,18 @@
 </head>
 <body>
     <div class="header">
+        <div class="shortcut">
+            <a href="{{ route('welcome') }}">Home</a>
+            <a href="{{ route('view') }}">View Employee</a>
+            <a href="{{ route('up') }}">Update Employee's Data</a>
+            <a href="">Delete</a>
+        </div>
         <div class="title">
             <h1>Add Employee</h1>
-        </div>     
-    </div>
-    <div class="shortcut">
-        <a href="{{ route('welcome')}}">Home</a>
-        <a href="{{ route('view')}}">View Employees</a>
-        <a href="{{ route('up')}}">Update Employee's Data</a>
-        <a href="">Delete</a>
-    </div>   
+        </div>
+    </div>  
+
     <div class="body">
-        
         <div class="form">
             <h2>Employee's Data</h2>
             <div class="identitas">

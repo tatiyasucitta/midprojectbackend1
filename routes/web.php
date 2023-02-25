@@ -16,12 +16,12 @@ use App\Http\Controllers\EmployeeController;
 Route::get('/', function () {
     return view('welcome');
 })-> name('welcome');
-// Route::get('/add', function () {
-//     return view('form');
-// })->name('add');
+
 Route::get('/update', function () {
     return view('update');
 })->name('up');
+
 Route::get('/view', [EmployeeController::class,'view'])->name('view');
+
 Route::get('/add', [EmployeeController::class,'addviewpage'])->name('add');
 Route::post('/added', [EmployeeController::class,'add'])->name('added');
