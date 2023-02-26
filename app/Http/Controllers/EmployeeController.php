@@ -37,33 +37,22 @@ class EmployeeController extends Controller
         ]);
 
         // return back()->withErrors(["status" => "Created new Employee named " . $request->EmployeeName ]);
-        return redirect('/')->with('success', 'Project aangepast');
+        return redirect('/')->with('mesage', 'Employee Updated');
     }
     function update($id){
         $employee = Employee::find($id);
         // dd($id); 
         return view('update', ['employee' => $employee]);
     }
-    function updated(Request $request, $id){
-
-        
-
-        // DB::table('employees')->where('id', $request->id)->update([
-        //     'name' => $request->name,
-        //     'age' => $request->age,
-        //     'address' => $request->address,
-        //     'phone' => $request->phone
-        // ]);
-
-
-        // dd($request);
-        // $validated = $request->validate([
-        //     "name" => "required|min:5|max:20",
-        //     "age" => "required|numeric|min:21",
-        //     "address" => "required|min:10|max:40",
-        //     "phone" => "required|regex:/^08/|min:9|max:12"
-        // ]);       
+    public function updated(request $request, $id){
         $employee = Employee::find($id);
+        $validated = $request->validate([
+            "name" => "required|min:5|max:20", 
+            "age" => "required|numeric|min:21",
+            "address" => "required|min:10|max:40",
+            "phone" => "required|regex:/^08/|min:9|max:12"
+        ]);
+        
         $employee->update([
             'name' => $request->name,
             'age' => $request->age,

@@ -25,25 +25,33 @@
         <div class="form">
             <h2>Edit Data</h2>
             <div class="identitas">
-            <form action="{{ url('updated.employee/'. $employee->id) }}" method="post">
+            <form action="{{ route('updated.employee', $employee->id) }}" method="post">
                     @csrf
                     @method('patch')
                     <div class="mules">
                         <label for="nama">Name</label>
-                        <input type="text" name="nama" id="" value="{{ $employee ->name }}">
-                  
-                    
+                        <input type="text" name="name" id="" value="{{ $employee ->name }}">
+                        <!-- <span >@error('username'){{$message}}@enderror</span>
+                        <br> -->
+
+
                         <label for="umur">Age</label>
-                        <input type="number" name="umur" id="" value="{{ $employee ->age }}">
+                        <input type="number" name="age" id="" value="{{ $employee ->age }}">
                    
                   
                         <label for="alamat">Address</label>
-                        <input type="text" name="alamat" id="" value="{{ $employee ->address }}">
+                        <input type="text" name="address" id="" value="{{ $employee ->address }}">
                   
                         <label for="tlp">Phone Number</label>
-                        <input type="tel" name="tlp" id="" value="{{ $employee ->phone }}">
+                        <input type="tel" name="phone" id="" value="{{ $employee ->phone }}">
+                        @if ($errors->any())
+                            <li class="error_message" role="alert">
+                                {{ $errors->first() }}
+                            </li>
+                        @endif
+                        <input class= "button" type="submit" value="Submit">
                     </div>
-                    <input class= "button" type="submit" value="Submit">
+                    
                 </form>
             </div>
         </div>

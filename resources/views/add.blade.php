@@ -41,8 +41,13 @@
                   
                         <label for="phone">Phone Number</label>
                         <input type="tel" name="phone" id="">
+                        @if ($errors->any())
+                            <li class="error_message" role="alert">
+                                {{ $errors->first() }}
+                            </li>
+                        @endif
+                        <input class= "button" type="submit" value="Submit">
                     </div>
-                    <input class= "button" type="submit" value="Submit">
                 </form>
             </div>
         </div>

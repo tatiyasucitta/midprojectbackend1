@@ -22,6 +22,6 @@ Route::post('/added', [EmployeeController::class,'add'])->name('added');
 
 
 Route::get('/update/{id}', [EmployeeController::class,'update'])->name('update');
-Route::patch('/updated.employee/{id}', [EmployeeController::class,'updated'])->name('updated.employee');
+Route::patch('/updated-employee/{id}', [EmployeeController::class,'updated'])->name('updated.employee');
 
 Route::delete('/delete/{id}', [EmployeeController::class,'delete'])->name('delete.employee');
