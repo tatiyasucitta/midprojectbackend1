@@ -74,8 +74,8 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
-                                                <button class="btn btn-primary" type="submit">No</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                                <button class="btn btn-primary" type="submit">Yes</button>
                                                 </div>
                                             </div>
                                             </div>
