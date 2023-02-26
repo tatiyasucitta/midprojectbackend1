@@ -36,14 +36,17 @@ class EmployeeController extends Controller
             'phone' =>$request ->phone
         ]);
 
-        // return back()->withErrors(["status" => "Created new Employee named " . $request->EmployeeName ]);
-        return redirect('/')->with('mesage', 'Employee Updated');
+        return redirect('/')->with('success', 'Employee Added!');
     }
-    function update($id){
+
+
+    public function update($id){
         $employee = Employee::find($id);
         // dd($id); 
         return view('update', ['employee' => $employee]);
     }
+
+
     public function updated(request $request, $id){
         $employee = Employee::find($id);
         $validated = $request->validate([
@@ -61,8 +64,10 @@ class EmployeeController extends Controller
         ]);
         // dd($request);
         // dd($request->all());
-        return redirect('/');
+        return redirect('/')->with('success', 'Employee Updated!');
     }
+
+
     public function delete($id){
         $employee = Employee::find($id);
         // dd($employee);

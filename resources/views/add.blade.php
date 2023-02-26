@@ -46,6 +46,9 @@
                                 {{ $errors->first() }}
                             </li>
                         @endif
+                        @if(session()->has('success'))
+                            <p class="alert alert-success"> {{ session()->get('success') }}</p>
+                        @endif                   
                         <input class= "button" type="submit" value="Submit">
                     </div>
                 </form>

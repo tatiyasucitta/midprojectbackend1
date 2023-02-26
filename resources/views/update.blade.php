@@ -31,9 +31,7 @@
                     <div class="mules">
                         <label for="nama">Name</label>
                         <input type="text" name="name" id="" value="{{ $employee ->name }}">
-                        <!-- <span >@error('username'){{$message}}@enderror</span>
-                        <br> -->
-
+                        
 
                         <label for="umur">Age</label>
                         <input type="number" name="age" id="" value="{{ $employee ->age }}">
@@ -49,6 +47,7 @@
                                 {{ $errors->first() }}
                             </li>
                         @endif
+                        
                         <input class= "button" type="submit" value="Submit">
                     </div>
                     
